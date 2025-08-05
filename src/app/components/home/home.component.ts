@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, inject } from '@angular/core';
+import { EnviaFormularioService } from '../../services/envia-formulario.service';
 
 @Component({
   selector: 'app-home',
@@ -8,10 +9,11 @@ import { Component } from '@angular/core';
 })
 export class HomeComponent {
   deveMostrarTitulo = true
-
-  submit() {
-
-  }
+  private enviaFormService = inject(EnviaFormularioService);
 
   listItems = [1,2,3,4,5]
+
+  submit(){
+    this.enviaFormService.enviaInformacao("Enviou?")
+  }
 }
