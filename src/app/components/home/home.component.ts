@@ -12,4 +12,11 @@ export class HomeComponent {
   atualizaBoleano(valor: boolean){
     this.meuBooleano = valor;
   }
+
+  name = "Kauan";
+  idButton = "gjoirfdigo"
+
+  submit() {
+    
+  }
 }
