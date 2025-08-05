@@ -7,16 +7,11 @@ import { Component } from '@angular/core';
   styleUrl: './home.component.css'
 })
 export class HomeComponent {
-  meuBooleano = false;
-
-  atualizaBoleano(valor: boolean){
-    this.meuBooleano = valor;
-  }
-
-  name = "Kauan";
-  idButton = "gjoirfdigo"
+  deveMostrarTitulo = true
 
   submit() {
-    
+
   }
+
+  listItems = [1,2,3,4,5]
 }

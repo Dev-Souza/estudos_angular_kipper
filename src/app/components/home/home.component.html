@@ -1,3 +1,13 @@
-<p>Olá mundo! {{ name }}</p>
+<p>Olá mundo!</p>
 
 <button (click)="submit()">Clique</button>
+
+@if (deveMostrarTitulo) {
+    <h1>Meu título</h1>
+} @else {
+    <h1>Não foi verdadeiro</h1>
+}
+
+@for (item of listItems; track item) {
+    <h2>{{item}}</h2>
+}
